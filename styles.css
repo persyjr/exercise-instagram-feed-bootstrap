@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  text-align:justify;
+  background: white;
+}
 
 body {
-      background:gray;
-      margin:0;
+  background-color:rgba(15, 169, 180, 0.1);
+  margin:0;
     }
 header {
-      background: white;
+      
       padding:10px;
     }
 
@@ -12,3 +20,59 @@ header {
   a:active {
     color: red;
   }
+.header {
+    
+    background-color:rgba(0, 234, 255, 0.032);  
+    padding:15px;
+    display:flex;
+    flex-direction: row;
+}
+.logo {
+  border-radius: 30%;
+}
+.containernames{
+  padding-left: 20px;
+  width: 100%;
+}
+
+.intercative{
+     
+  background-color:rgba(15, 169, 180, 0.1); 
+  padding:15px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: end;
+  }
+.likes-options{
+  width:30%;
+  display:flex;
+}
+.save{
+  width:10%;
+  display:flex;
+  justify-content:flex-end;
+}
+.likes-options > .fa:hover ,.save > .fa:hover, .button-options >i:hover{
+  background-color: rgba(8, 243, 255, 1);
+  border-radius: 30%;
+  padding: 0px 3% ;
+}
+@keyframes show {
+  from{
+    opacity: 0;
+    scale:25%;
+  }  
+  to {
+    opacity : 1 ;
+    scale: 100%;
+  }
+
+}
+.post {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 0% cover 70%;
+}
